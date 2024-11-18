@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language">
+	<head>
+		<layout>
+			<root-layout backgroundColor="green" />
+			<region id="backgroundImage" top="0" left="0" height="100%" width="100%" z-index="0" fit="fill" />
+			<!-- border of the representation -->
+			<region id="borderTop" top="0" left="0" height="1%" width="100%" z-index="1" fit="fill" backgroundColor="green" />
+			<region id="borderLeft" top="0" left="0" height="100%" width="1%" z-index="1" fit="fill" backgroundColor="green" />
+			<region id="borderRight" top="0" right="0" height="100%" width="1%" z-index="1" fit="fill" backgroundColor="green" />
+			<region id="borderBottom" bottom="0" left="0" height="1%" width="100%" z-index="1" fit="fill" backgroundColor="green" />
+			<region id="borderTop2" top="2%" left="2%" height="1%" width="96%" z-index="1" fit="fill" backgroundColor="green" />
+			<region id="borderLeft2" top="2%" left="2%" height="96%" width="1%" z-index="1" fit="fill" backgroundColor="green" />
+			<region id="borderRight2" top="2%" right="2%" height="96%" width="1%" z-index="1" fit="fill" backgroundColor="green" />
+			<region id="borderBottom2" bottom="2%" left="2%" height="1%" width="96%" z-index="1" fit="fill" backgroundColor="green" />
+			<!-- end of border -->
+			<!-- page de garde -->
+			<region id="firstTitle" top="20%" left="15%" height="15%" width="40%" z-index="1" fit="meet" />
+			<region id="firstImage" top="6%" right="3%" height="30%" width="45%" z-index="1" fit="meet" />
+			<region id="firstVideo" top="38%" right="6%" height="54%" width="33%" z-index="1" fit="fill" />
+			<region id="PresentedBy" top="43%" left="5%" height="10%" width="40%" z-index="1" fit="meet" />
+			<!-- presentation sudents 5 students -->
+			<region id="student1" top="55%" left="5%" height="7%" width="25%" z-index="1" fit="meet" />
+			<region id="student2" top="64%" left="20%" height="7%" width="25%" z-index="1" fit="meet" />
+			<region id="student3" top="72%" left="5%" height="7%" width="25%" z-index="1" fit="meet" />
+			<region id="student4" top="80%" left="20%" height="7%" width="25%" z-index="1" fit="meet" />
+			<region id="student5" top="88%" left="5%" height="7%" width="25%" z-index="1" fit="meet" />
+			<!-- end of presentation sudents -->
+			<region id="clasee" bottom="3%" right="3%" height="5%" width="40%" z-index="1" fit="meet" />
+			<!-- end of page de garde -->
+			<!-- second frame -->
+			<region id="date" top="9%" left="39%" width="14%" height="5%" />
+			<region id="IntroDates" left="39%" top="15%" width="18%" height="14%" z-index="1" />
+			<region id="polandInvasion" left="1%" top="20%" width="37%" height="9%" />
+			<region id="polandImage" left="5%" top="31%" height="20%" width="37%" fit="meet" />
+			<region id="bombing" right="1%" top="20%" width="39%" height="14%" />
+			<region id="bombingVideo" right="6%" top="35%" height="20%" width="35%" fit="fill" />
+			<region id="context" top="30%" left="34%" width="25%" height="44%" />
+			<region id="belligerents" top="75%" left="33%" width="30%" height="5%" />
+			<!-- the belligerents flags -->
+			<region id="usaFlag" top="53%" left="3%" width="37%" height="20%" fit="meet" />
+			<region id="naziFlag" top="56%" right="-5%" width="37%" height="20%" fit="meet" z-index="3" />
+			<region id="britishFlag" top="82%" left="1%" width="13%" height="22%" fit="meet" />
+			<region id="sovietFlag" top="82%" left="15%" width="13%" height="22%" fit="meet" />
+			<region id="chinaFlag" top="82%" left="29%" width="13%" height="22%" fit="meet" />
+			<region id="franceFlag" top="82%" left="43%" width="13%" height="22%" fit="meet" />
+			<region id="polandFlag" top="82%" left="57%" width="13%" height="22%" fit="meet" />
+			<region id="italyFlag" top="82%" left="71%" width="13%" height="22%" fit="meet" />
+			<region id="japanFlag" top="82%" left="85%" width="13%" height="22%" fit="meet" />
+			<!-- end of second frame -->
+			<!-- the third frame -->
+			<region id="title" top="4%" left="5%" width="40%" height="8%" />
+			<region id="video" top="15%" left="5%" width="50%" height="40%" fit="meet" />
+			<region id="image" top="58%" left="5%" width="50%" height="38%" fit="fill" />
+			<region id="oneImageDispalyed" top="13%" left="5%" width="50%" height="80%" fit="fill" />
+			<region id="description" top="4%" right="4%" width="39%" height="90%" fit="meet" />
+			<!-- end of third frame -->
+			<!-- transition frame -->
+			<region id="transition" top="15%" left="25%" width="70%" height="20%" fit="fill" />
+			<region id="transitionImage" top="40%" left="20%" width="60%" height="50%" fit="fill" />
+			<!-- end of transition frame -->
+		</layout>
+	</head>
+	<body>
+		<par>
+			<img region="backgroundImage" src="backgroudImage.png" />
+			<text region="borderTop" src="border.txt" style=" color:black;" />
+			<text region="borderLeft" src="border.txt" style="color:black;" />
+			<text region="borderRight" src="border.txt" style="color:black;" />
+			<text region="borderBottom" src="border.txt" style=" color:black;" />
+			<text region="borderTop2" src="border.txt" style=" color:black;" />
+			<text region="borderLeft2" src="border.txt" style="color:black;" />
+			<text region="borderRight2" src="border.txt" style="color:black;" />
+			<text region="borderBottom2" src="border.txt" style=" color:black;" />
+			<seq>
+				<par dur="10s">
+					<text region="firstTitle" src="gardePage/title.txt" begin="2s" style="font-family:Arial; font-size:18px; color:black;" />
+					<video region="firstVideo" src="gardePage/pageGarde.mp4" begin="2s" dur="9s" />
+					<img region="firstImage" src="gardePage/pageGarde.jpg" />
+					<text region="PresentedBy" src="gardePage/presentedBy.txt" begin="3s" style="font-family:Arial; font-size:18px; color:black;" />
+					<text region="student1" src="students/student1.txt" begin="4s" style="font-family:Arial; font-size:18px; color:black;" />
+					<text region="student2" src="students/student2.txt" begin="5s" style="font-family:Arial; font-size:18px; color:black;" />
+					<text region="student3" src="students/student3.txt" begin="6s" style="font-family:Arial; font-size:18px; color:black;" />
+					<text region="student4" src="students/student4.txt" begin="7s" style="font-family:Arial; font-size:18px; color:black;" />
+					<text region="student5" src="students/student5.txt" begin="8s" style="font-family:Arial; font-size:18px; color:black;" />
+					<text region="clasee" src="gardePage/class.txt" style="font-family:Arial; font-size:18px; color:black;" />
+				</par>
+				<!-- first chapter Introduction -->
+				<par dur="2s">
+					<text region="transition" src="intro/transition.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<img region="transitionImage" src="intro/introTransition.jpg" />
+				</par>
+				<!-- a refaire -->
+				<par dur="14s">
+					<text region="date" src="date.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<text region="IntroDates" src="intro/dates.txt" style="font-family:Arial; font-size:15px; color:white;" begin="1s" />
+					<text region="polandInvasion" src="intro/PolandInvasion.txt" style="font-family:Arial; font-size:18px; color:black;" begin="2s" />
+					<img region="polandImage" src="intro/polandInvasion.jpg" begin="3s" />
+					<text region="bombing" src="intro/bombing.txt" style="font-family:Arial; font-size:18px; color:black;" begin="2s" />
+					<video region="bombingVideo" src="intro/bombing.mp4" begin="3s" dur="14s" />
+					<text region="context" src="intro/context.txt" begin="6s" />
+					<text region="belligerents" src="intro/belligerents.txt" begin="7s" />
+					<img region="usaFlag" src="intro/usaFlag.png" begin="8s" />
+					<img region="naziFlag" src="intro/naziFlag.png" begin="8s" />
+					<img region="britishFlag" src="intro/britishFlag.png" begin="10s" />
+					<img region="sovietFlag" src="intro/sovietFlag.png" begin="11s" />
+					<img region="chinaFlag" src="intro/chinaFlag.png" begin="12s" />
+					<img region="franceFlag" src="intro/franceFlag.png" begin="13s" />
+					<img region="polandFlag" src="intro/polandFlag.png" begin="12s" />
+					<img region="italyFlag" src="intro/italyFlag.png" begin="11s" />
+					<img region="japanFlag" src="intro/japanFlag.png" begin="10s" />
+				</par>
+				<!-- end of la section a refaire -->
+				<!-- causes  chapter -->
+				<par dur="2s">
+					<text region="transition" src="causes/transition.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<img region="transitionImage" src="causes/mainCausesTransition.jpg" />
+				</par>
+				<!-- the rise of Nazism -->
+				<par dur="6s">
+					<text region="title" src="causes/nazisme/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<img region="oneImageDispalyed" src="causes/nazisme/nazi.jpg" begin="1s" />
+					<text region="description" src="causes/nazisme/description.txt" style="font-family:Arial; font-size:18px; color:black;" begin="1s" />
+				</par>
+				<!-- end of the rise of Nazism -->
+				<!-- poland Invasion -->
+				<par dur="6s">
+					<text region="title" src="causes/polandInvasion/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<video region="video" src="causes/polandInvasion/polandInvasion.mp4" begin="1s" />
+					<text region="description" src="causes/polandInvasion/description.txt" style="font-family:Arial; font-size:18px; color:black;" begin="1s" />
+				</par>
+				<!-- end of poland Invasion -->
+				<!-- military alinnces (folder named causes/aliances) -->
+				<par dur="6s">
+					<text region="title" src="causes/aliances/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<img region="oneImageDispalyed" src="causes/aliances/aliances.jpg" begin="1s" />
+					<text region="description" src="causes/aliances/description.txt" style="font-family:Arial; font-size:18px; color:black;" begin="1s" />
+				</par>
+				<!-- end of military alinnces -->
+				<!-- end of causes  chapter -->
+				<!-- Main Phases of ww2 -->
+				<par dur="2s">
+					<text region="transition" src="mainPhases/transition.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<img region="transitionImage" src="mainPhases/mainPhasesTransition.jpg" />
+				</par>
+				<!-- the battle of France  (folder named mainPhases/franceBattle) -->
+				<par dur="12s">
+					<text region="title" src="mainPhases/franceBattle/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<video region="video" src="mainPhases/franceBattle/franceInvasion.mp4" begin="1s" />
+					<img region="image" src="mainPhases/franceBattle/franceBattle.jpg" begin="1s" />
+					<text region="description" src="mainPhases/franceBattle/description.txt" style="font-family:Arial; font-size:18px; color:black;" begin="1s" />
+				</par>
+				<!-- end of the battle of France -->
+				<!-- the battle of Britain  (folder named mainPhases/britishBattle) -->
+				<par dur="6s">
+					<text region="title" src="mainPhases/britishBattle/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<img region="oneImageDispalyed" src="mainPhases/britishBattle/britishBattle.jpg" begin="1s" />
+					<text region="description" src="mainPhases/britishBattle/description.txt" style="font-family:Arial; font-size:18px; color:black;" begin="1s" />
+				</par>
+				<!-- end of the battle of Britain -->
+				<!-- barbaroussa operation (folder named mainPhases/barbaroussaOperation) -->
+				<par dur="10s">
+					<text region="title" src="mainPhases/barbaroussaOperation/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<video region="video" src="mainPhases/barbaroussaOperation/barbaroussaOperation.mp4" begin="1s" />
+					<text region="description" src="mainPhases/barbaroussaOperation/description.txt" style="font-family:Arial; font-size:18px; color:black;" begin="1s" />
+					<img region="image" src="mainPhases/barbaroussaOperation/barbaroussaOperation.jpg" begin="1s" />
+				</par>
+				<!-- end of barbaroussa operation -->
+				<!-- pearl Harber and us enter the war (folder named mainPhases/pearlHarber) -->
+				<par dur="7s">
+					<text region="title" src="mainPhases/pearlHarber/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<img region="oneImageDispalyed" src="mainPhases/pearlHarber/pearlHarberAI.jpg" />
+					<text region="description" src="mainPhases/pearlHarber/description.txt" style="font-family:Arial; font-size:18px; color:black;" />
+				</par>
+				<!-- end of Main Phases of ww2 -->
+
+
+				<par dur="3s">
+					<text region="transition" src="pointTournants/transition.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<img region="transitionImage" src="pointTournants/transitionimg.jpeg" />
+				</par>
+
+
+				 <par>
+					<text region="title" src="pointTournants/stalingrad/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+					<text region="description" src="pointTournants/stalingrad/description.txt" style="font-family:Arial; font-size:18px; color:black;"/>
+					<seq>
+						<img region="oneImageDispalyed" src="pointTournants/stalingrad/stalin1.jpg" dur="4s"/>
+						<img region="oneImageDispalyed" src="pointTournants/stalingrad/stalin2.jpeg" dur="3s"/>
+						<img region="oneImageDispalyed" src="pointTournants/stalingrad/stalin3.png" dur="3s"/>
+						<video region="video" src="pointTournants/stalingradv.mp4" clipBegin="00:00:00" clipEnd="00:00:15" audiolevel="0"></video>
+					</seq>
+                </par>
+					<par>
+						<text region="title" src="pointTournants/alamein/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+						<text region="description" src="pointTournants/alamein/description.txt" style="font-family:Arial; font-size:18px; color:black;"/>
+						<seq>
+						  <img region="oneImageDispalyed" src="pointTournants/alamein/alamein1.jpeg" dur="4s"/>
+						  <img region="oneImageDispalyed" src="pointTournants/alamein/alamein2.png" dur="4s"/>
+						  <video region="video" src="pointTournants/alameinv.mp4" clipBegin="00:00:00" clipEnd="00:00:15" audiolevel="0"></video>
+						</seq>
+						</par>
+
+					<par>
+						<text region="title" src="pointTournants/normandie/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+						<text region="description" src="pointTournants/normandie/description.txt" style="font-family:Arial; font-size:18px; color:black;"/>
+						<seq>
+							<img region="oneImageDispalyed" src="pointTournants/normandie/normandie1.jpg" dur="3s"/>
+							<img region="oneImageDispalyed" src="pointTournants/normandie/normandie2.jpg" dur="3s"/>
+							<img region="oneImageDispalyed" src="pointTournants/normandie/normandie3.png" dur="4s"/>
+							<video region="video" src="pointTournants/normandiev.mp4" audiolevel="0"></video>
+						</seq>
+						</par>
+
+
+					<par>
+						<text region="title" src="pointTournants/pacific/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+						<text region="description" src="pointTournants/pacific/description.txt" style="font-family:Arial; font-size:18px; color:black;"/>
+						<seq>
+							<img region="oneImageDispalyed" src="pointTournants/pacific/pacific2.jpg" dur="3s"/>
+							<img region="oneImageDispalyed" src="pointTournants/pacific/pacific3.jpg" dur="3s"/>
+							<img region="oneImageDispalyed" src="pointTournants/pacific/pacific1.jpeg" dur="4s"/>
+							<video region="video" src="pointTournants/pacificv.mp4" clipBegin="00:00:00" clipEnd="00:00:15" audiolevel="0"></video>
+						</seq>
+						</par>
+
+                    
+
+					<par dur="3s">
+						<text region="transition" src="holocaust/transition.txt" style="font-family:Arial; font-size:18px; color:black;" />
+						<img region="transitionImage" src="holocaust/transitionimg.jpg" />
+					</par>
+
+
+
+					<par>
+						<text region="title" src="holocaust/title.txt" style="font-family:Arial; font-size:18px; color:black;" />
+						<text region="description" src="holocaust/description.txt" style="font-family:Arial; font-size:18px; color:black;"/>
+						<seq>
+							<img region="oneImageDispalyed" src="holocaust/holocaust1.jpg" dur="3s"/>
+							<img region="oneImageDispalyed" src="holocaust/holocaust2.jpg" dur="3s"/>
+							<img region="oneImageDispalyed" src="holocaust/holocaust3.jpg" dur="4s"/>
+							<video region="video" src="holocaust/h.mp4" clipBegin="00:00:00" clipEnd="00:00:15"></video>
+						</seq>
+						</par>
+					
+
+
+
+
+					
+				 
+
+			</seq>
+		</par>
+	</body>
+</smil>
